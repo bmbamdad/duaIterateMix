@@ -1,0 +1,9 @@
+1- name your trip file as "trips.xml"
+2- determine CAVs and HDVs options (penetration rate of CAVs, CAVs rerouting probability, etc.) 
+3- Run the DemandGenerator.py in order to split your trips file into trips.trips.xml (for HDVs) and trips.trips.CAV.xml (for CAVs) 
+
+Here is an example command line for running DemandGenetor.py: 
+
+python CAVDemandGenerator.py --CAV-Percentage 80 -CAV trips.trips.CAV.xml -CAVRePe 60 -CAVRePr 0.1 -CAVReDe true  -HDV trips.trips.xml -HDVRePe 90 -HDVRePr 0.5 -HDVReDe true
+
+in this example the penetration rate of CAVs is 80%; CAVs rerouting period= 60 sec; CAVs rerouting probability=10%; CAVs have deterministic rerouting; HDVs rerouting period=90; HDVs rerouting probability=0.5; HDVs have determinist rerouting 
