@@ -7,3 +7,5 @@ Instruction:
 2- open a terminal and run duaiterateMix.py with the new demand files which are generated in the previous step
 
 An example is available in this repository
+
+You should first install SUMO on your machine to be able to use this tool! more info: https://sumo.dlr.de/
