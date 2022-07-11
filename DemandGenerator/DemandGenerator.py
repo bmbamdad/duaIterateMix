@@ -42,7 +42,6 @@ def CAVFileGenerator(options):
     with open(options.CAVf, 'w') as CAVf:
         sumolib.writeXMLHeader(CAVf, "$Id$", "routes", options=options)  # noqa
         CAVf.write('    <vType id="CAV" carFollowModel="Krauss" accel="3.8" decel="4.5" emergencyDecel="8" sigma="0.0" tau="0.6" minGap="0.5" color="0,0,255">\n')
-        CAVf.write('        <param key="has.rerouting.device" value="%s"/>\n'% (options.CAVRe))
         CAVf.write('        <param key="device.rerouting.period" value="%s"/>\n' % (options.CAVRePe))
         CAVf.write('        <param key="device.rerouting.probability" value="%s"/>\n' % (options.CAVRePr))
         CAVf.write('        <param key="device.rerouting.deterministic" value="%s"/>\n' % (options.CAVReDe))
@@ -55,7 +54,6 @@ def HDVFileGenerator(options):
     with open(options.HDVf, 'w') as HDVf:
         sumolib.writeXMLHeader(HDVf, "$Id$", "routes", options=options)  # noqa
         HDVf.write('    <vType id="HDV" carFollowModel="Krauss" accel="3.5" decel="4.5" emergencyDecel="8" sigma="0.5" tau="0.9" minGap="1.5" color="1,0,0">\n')
-        HDVf.write('        <param key="has.rerouting.device" value="%s"/>\n'% (options.HDVRe))
         HDVf.write('        <param key="device.rerouting.period" value="%s"/>\n' % (options.HDVRePe))
         HDVf.write('        <param key="device.rerouting.probability" value="%s"/>\n' % (options.HDVRePr))
         HDVf.write('        <param key="device.rerouting.deterministic" value="%s"/>\n' % (options.HDVReDe))                
