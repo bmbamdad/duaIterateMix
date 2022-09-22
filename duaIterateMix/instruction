@@ -1,5 +1,5 @@
-1- put all of the nessassy files into the same directory (trip file; network file; etc) 
-2- run the duaIterateMix.py with the nessassy options 
+1- Put all necessary files into the same directory (trip file, network file, etc.) 
+2- Run the duaIterateMix.py with the necessary options 
 
 Here is an example command line: 
 python duaIterateMix.py -n Falls.net.XML -m=true -j=true -z=true -t trips.trips.xml -r trips.trips.CAV.xml sumo--duration-log.statistics sumo--statistic-output stats.xml --logit --max-alternatives-CAV 5 --PSwap 50  --marginal-cost --marginal-cost.exp 1 --mix
